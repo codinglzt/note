@@ -1,5 +1,5 @@
 ### 算法，主要是以下几种：
-* 基础技巧： [二分法](https://github.com/codinglzt/note/blob/master/%E7%AE%97%E6%B3%95/code/%E4%BA%8C%E5%88%86%E6%B3%95.md)、分治、贪心
+* 基础技巧： [二分法](https://github.com/codinglzt/note/blob/master/%E7%AE%97%E6%B3%95/code/%E4%BA%8C%E5%88%86%E6%B3%95.md)、分治、贪心、双指针
 * 排序算法： 快速排序、归并排序、计数排序
 * 搜索算法： 回溯、递归、深度优先遍历、广度优先遍历、二叉搜索树等
 * 图论: 最短路径、最小生成树
