@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .vertical_centered1 {
+      font-size: 20px;
+      line-height: 20px;
+    }
+
+    .vertical_centered2 {
+      position: relative;
+      height: 50px;
+    }
+    .vertical_centered2 > div {
+      margin: auto 0;
+      position: absolute;
+      height: 40px;
+      width: 40px;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+
+    .flex_vertical_centered {
+      display: flex;
+      height: 100px;
+      /* align-items: center; */
+    }
+    .flex_vertical_centered > div {
+      margin: auto 0;
+      height: 40px;
+      width: 40px;
+    }
+
+    .vertical_centered3 {
+      position: relative;
+      height: 100px;
+    }
+    .vertical_centered3 > div {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+    }
+
+    .vertical_centered4 {
+      display: table;
+      height: 100px;
+    }
+    .vertical_centered4 > div {
+      display: table-cell;
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
+  <!-- 1.利用line-height实现居中，这种方法适合纯文字类 -->
+  <p class="vertical_centered1">文字类垂直居中</p>
+
+  <!-- 2.通过设置父容器相对定位，子级设置绝对定位，标签通过margin实现自适应居中 -->
+  <div class="vertical_centered2">
+    <div>
+      垂直居中
+    </div>
+  </div>
+
+  <!-- 3.弹性布局flex:父级设置display: flex; 子级设置margin为auto实现自适应居中 -->
+  <div class="flex_vertical_centered">
+    <div>
+      垂直居中
+    </div>
+  </div>
+
+  <!-- 4.父级设置相对定位，子级设置绝对定位，并且通过位移transform实现 -->
+  <div class="vertical_centered3">
+    <div>
+      垂直居中
+    </div>
+  </div>
+
+  <!-- 5.table布局，父级通过转换成表格形式，然后子级设置vertical-align实现 -->
+  <div class="vertical_centered4">
+    <div>
+      垂直居中
+    </div>
+  </div>
+</body>
+</html>

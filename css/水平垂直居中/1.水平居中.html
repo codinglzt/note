@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .inline_centered {
+      text-align: center;
+    }
+
+    .block_centered1 {
+      width: 400px;
+      margin: 0 auto;
+    }
+
+    .block_centered2 {
+      position: relative;
+      height: 20px;
+      width: 500px;
+    }
+    .block_centered2 > div {
+      position: absolute;
+      top: 0;
+      left: 500px;
+      margin-left: -50%;
+    }
+
+    .table_centered {
+      display: table;
+      margin: 0 auto;
+    }
+
+    .inline_block_centered {
+      text-align: center;
+    }
+    .inline_block_centered > div {
+      display: inline-block;
+    }
+
+    .transform_centered {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .flex_centered {
+      display: flex;
+      justify-content: center;
+    }
+  </style>
+</head>
+<body>
+  <!-- 1.内联元素居中 text-align: center -->
+  <div class="inline_centered">
+    <span>行内元素居中</span>
+  </div>
+
+  <!-- 2.对于确定宽度的块级元素width和margin实现。margin: 0 auto; -->
+  <div class="block_centered1">
+    <div>块级元素居中 margin</div>
+  </div>
+
+  <!-- 3.绝对定位和margin-left: -width/2, 前提是父元素position: relative -->
+  <div class="block_centered2">
+    <div>
+      块级元素居中
+    </div>
+  </div>
+
+  <!-- 4.table标签配合margin左右auto实现水平居中 -->
+  <div class="table_centered">
+    table 块级居中
+  </div>
+
+  <!-- 5.display：inline-block和text-align:center实现水平居中 -->
+  <div class="inline_block_centered">
+    <div>inline_block 居中</div>
+  </div>
+
+  <div class="transform_centered">
+    块级居中
+  </div>
+
+  <div class="flex_centered">
+    flex居中
+  </div>
+</body>
+</html>
