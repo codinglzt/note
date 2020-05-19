@@ -72,7 +72,7 @@ const obj = {
 }
 
 for (let [key, value] of Object.entries(obj)) {
-    console.log(`${key}`:${value});
+    console.log(`${key}:${value}`);
 }
 // "a: somethig"
 // "b: 32"
